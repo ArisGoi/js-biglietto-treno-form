@@ -5,52 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trenitalia | Generazione Biglietto</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
     <main>
-        <div>
-            <label for="name">Nome e Cognome:</label>
-            <input type="text" id="name" placeholder="Inserisci --">
+        <div class="form-utente">
+            <div>
+                <label for="name">Nome e Cognome:</label>
+                <input type="text" id="name" placeholder="Inserisci --">
+            </div>
+
+            <div>
+                <label for="eta">Fascia d'età:</label>
+                <select name="eta" id="eta">
+                    <option value="">-- Scegli una fascia d'età --</option>
+                    <option value="minor">Minorenne</option>
+                    <option value="maggior">Maggiorenne</option>
+                    <option value="overEta">Over 65</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="date">Data Partenza:</label>
+                <input type="date" id="date" placeholder="Inserisci --">
+            </div>
+
+            <div>
+                <label for="destination">Destinazione:</label>
+                <select name="destination" id="destination">
+                    <option value="">-- Inserisci Destinazione --</option>
+                    <option value="BO">Bologna</option>
+                    <option value="FI">Firenze</option>
+                    <option value="NA">Napoli</option>
+                    <option value="PE">Pescara</option>
+                    <option value="RM">Roma</option>
+                    <option value="TA">Taranto</option>
+                    <option value="VE">Venezia</option>
+                    <option value="VB">Verbania</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="classe">Classe:</label>
+                <select name="classe" id="classe">
+                    <option value="">-- Scegli una classe --</option>
+                    <option value="first">Prima Classe</option>
+                    <option value="eco">Economy</option>
+                </select>
+            </div>
         </div>
 
-        <div>
-            <label for="eta">Fascia d'età:</label>
-            <select name="eta" id="eta">
-                <option value="">-- Scegli una fascia d'età --</option>
-                <option value="minor">Minorenne</option>
-                <option value="maggior">Maggiorenne</option>
-                <option value="overEta">Over 65</option>
-            </select>
-        </div>
-        
-        <div>
-            <label for="date">Data Partenza:</label>
-            <input type="date" id="date" placeholder="Inserisci --">
-        </div>
-
-        <div>
-            <label for="destination">Destinazione:</label>
-            <select name="destination" id="destination">
-                <option value="">-- Inserisci Destinazione --</option>
-                <option value="BO">Bologna</option>
-                <option value="FI">Firenze</option>
-                <option value="NA">Napoli</option>
-                <option value="PE">Pescara</option>
-                <option value="RM">Roma</option>
-                <option value="TA">Taranto</option>
-                <option value="VE">Venezia</option>
-                <option value="VB">Verbania</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="classe">Classe:</label>
-            <select name="classe" id="classe">
-                <option value="">-- Scegli una classe --</option>
-                <option value="">Prima Classe</option>
-                <option value="">Economy</option>
-            </select>
+        <div class="form-btn">
+            <button>Crea Biglietto</button>
+            <button>Annulla</button>
         </div>
     </main>
 

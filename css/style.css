@@ -4,3 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Common */
+div{
+    margin-top: 15px;
+}
