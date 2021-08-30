@@ -122,3 +122,13 @@ btnCrea.addEventListener('click',
     }
 );
 
+btnAnnulla.addEventListener('click', 
+    function(){
+        document.getElementById('ticket').classList.remove('show');
+        document.getElementById('eta').selectedIndex = 0;
+        document.getElementById('destination').selectedIndex = 0;
+        document.getElementById('classe').selectedIndex = 0;
+        document.getElementById('dateForm').value = "";
+        document.getElementById('name').value = "";
+    }
+);
