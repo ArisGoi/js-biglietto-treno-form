@@ -68,10 +68,13 @@ btnCrea.addEventListener('click',
 
                     // nome e cognome
                     document.getElementById('innName').innerHTML = getName;
+                    document.getElementById('innName2').innerHTML = getName;
                     // Categoria passeggero (ETA)
                     document.getElementById('innEta').innerHTML = getEta;
+                    document.getElementById('innEta2').innerHTML = getEta;
                     // Data Biglietto
                     document.getElementById('innDate').innerHTML = getDate;
+                    document.getElementById('innDate2').innerHTML = getDate;
                     // Partenza
                     document.getElementById('innFrom').innerHTML = getFrom;
                     // Destinazione
@@ -102,13 +105,20 @@ btnCrea.addEventListener('click',
                     };
                     // Classe
                     document.getElementById('innClass').innerHTML = getClass;
+                    document.getElementById('innClass2').innerHTML = getClass;
                     // Posto a sedere
                     document.getElementById('innSeat').innerHTML = seatNumber;
                     // Codice biglietto
                     document.getElementById('innCode').innerHTML = ticketCode;
+                    document.getElementById('innCode2').innerHTML = ticketCode;
                     // Prezzo Biglietto
                     document.getElementById('innPrice').innerHTML = finalPrice + " €";
+                    document.getElementById('innPrice2').innerHTML = finalPrice + " €";
+
+                    // Show Biglietto
+                    document.getElementById('ticket').classList.add('show');
             }
 
     }
 );
+

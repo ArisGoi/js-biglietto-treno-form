@@ -17,7 +17,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
-img{
+img.logo{
     height: 90px;
     margin-bottom: 40px;
 }
@@ -72,15 +72,111 @@ button{
     margin: 10px;
 }
 
-.ticket{
+#ticket{
     text-align: center;
+    margin-top: 30px;
+    padding: 0 35px;
     width: 100%;
-    height: 850px;
+    height: 700px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
-.ticket img{
-    width: 100%;
-    height: 100%;
+#ticket.show{
+    opacity: 1;
 }
-.ticket p{
+#ticket img{
+    width: 1100px;
+}
+#ticket p{
     font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #888;
+}
+
+/* Dati Biglietto */
+#innName{
+    position: absolute;
+    color: white !important;
+    top: 48px;
+    left: 432px;
+}
+#innName2{
+    position: absolute;
+    color: white !important;
+    top: 48px;
+    left: 948px;
+}
+
+#innEta{
+    position: absolute;
+    top: 253px;
+    left: 490px;
+}
+#innEta2{
+    position: absolute;
+    top: 256px;
+    left: 948px;
+}
+
+#innDate{
+    position: absolute;
+    top: 253px;
+    left: 737px;
+}
+#innDate2{
+    position: absolute;
+    top: 132px;
+    left: 948px;
+}
+
+#innFrom{
+    position: absolute;
+    top: 329px;
+    left: 168px;
+}
+#innDestination{
+    position: absolute;
+    top: 258px;
+    left: 168px;
+}
+
+#innClass{
+    position: absolute;
+    top: 144px;
+    left: 735px;
+}
+#innClass2{
+    position: absolute;
+    top: 192px;
+    left: 948px;
+}
+
+#innSeat{
+    position: absolute;
+    top: 144px;
+    left: 489px;
+}
+
+#innCode{
+    position: absolute;
+    top: 377px;
+    left: 730px;
+}
+#innCode2{
+    position: absolute;
+    top: 376px;
+    left: 946px;
+}
+
+#innPrice{
+    position: absolute;
+    top: 423px;
+    left: 488px;
+}
+#innPrice2{
+    position: absolute;
+    top: 315px;
+    left: 946px;
 }
