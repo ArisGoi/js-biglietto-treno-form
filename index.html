@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trenitalia | Generazione Biglietto</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <!-- myCSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,7 +25,7 @@
             <div>
                 <label for="eta">Fascia d'età:</label>
                 <select name="eta" id="eta">
-                    <option value="" disabled>-- Scegli una fascia d'età --</option>
+                    <option value="" disabled selected>-- Scegli una fascia d'età --</option>
                     <option value="Minorenne">Minorenne</option>
                     <option value="Maggiorenne">Maggiorenne</option>
                     <option value="Over65">Over 65</option>
@@ -35,7 +40,7 @@
             <div>
                 <label for="destination">Destinazione:</label>
                 <select name="destination" id="destination">
-                    <option value="" disabled>-- Inserisci Destinazione --</option>
+                    <option value="" disabled selected>-- Inserisci Destinazione --</option>
                     <option value="216">Bologna</option>
                     <option value="306">Firenze</option>
                     <option value="764">Napoli</option>
@@ -50,7 +55,7 @@
             <div>
                 <label for="classe">Classe:</label>
                 <select name="classe" id="classe">
-                    <option value="" disabled>-- Scegli una classe --</option>
+                    <option value="" disabled selected>-- Scegli una classe --</option>
                     <option value="Prima">Prima Classe</option>
                     <option value="Economy">Economy</option>
                 </select>
